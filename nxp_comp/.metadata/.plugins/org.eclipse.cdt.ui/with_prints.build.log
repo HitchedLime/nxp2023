@@ -1,0 +1,107 @@
+16:06:46 **** Build of configuration Debug for project with_prints ****
+make -r -j8 all 
+Building file: ../source/nxpcup_ARC_c++.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSERIAL_PORT_TYPE_UART=1 -DSDK_DEBUGCONSOLE=0 -DSDK_DEBUGCONSOLE_UART -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__NEWLIB__ -I"/home/david/Documents/nxp_comp/with_prints/board" -I"/home/david/Documents/nxp_comp/with_prints/source" -I"/home/david/Documents/nxp_comp/with_prints/drivers" -I"/home/david/Documents/nxp_comp/with_prints/device" -I"/home/david/Documents/nxp_comp/with_prints/CMSIS" -I"/home/david/Documents/nxp_comp/with_prints/utilities" -I"/home/david/Documents/nxp_comp/with_prints/component/serial_manager" -I"/home/david/Documents/nxp_comp/with_prints/component/uart" -I"/home/david/Documents/nxp_comp/with_prints/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fno-rtti -fno-exceptions -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__NEWLIB__ -fstack-usage -specs=nano.specs -MMD -MP -MF"source/nxpcup_ARC_c++.d" -MT"source/nxpcup_ARC_c++.o" -MT"source/nxpcup_ARC_c++.d" -o "source/nxpcup_ARC_c++.o" "../source/nxpcup_ARC_c++.cpp"
+In file included from ../source/nxpcup_ARC_c++.cpp:58:
+../source/Modules/mGyro.h:65:24: warning: multi-line comment [-Wcomment]
+   65 | #define OUT_Z_LSB 0x06 // [7:0] are 8 MSBs of 16 bit Z-axis data sample; \
+      |                        ^
+In file included from ../source/nxpcup_ARC_c++.cpp:68:
+../source/Applications/gInput.h:4:21: warning: "/*" within comment [-Wcomment]
+    4 | All rights reserved./*
+      |                      
+../source/nxpcup_ARC_c++.cpp: In function 'int main()':
+../source/nxpcup_ARC_c++.cpp:295:15: warning: unused variable 'sPixelValMoy' [-Wunused-variable]
+  295 |  static UInt8 sPixelValMoy;
+      |               ^~~~~~~~~~~~
+../source/nxpcup_ARC_c++.cpp:296:14: warning: unused variable 'sImageOk' [-Wunused-variable]
+  296 |  static bool sImageOk = false;
+      |              ^~~~~~~~
+../source/nxpcup_ARC_c++.cpp:298:16: warning: variable 'sIntTime' set but not used [-Wunused-but-set-variable]
+  298 |  static UInt16 sIntTime = 25000;
+      |                ^~~~~~~~
+../source/nxpcup_ARC_c++.cpp:300:7: warning: unused variable 'aCharTab' [-Wunused-variable]
+  300 |  Int8 aCharTab[50];
+      |       ^~~~~~~~
+../source/nxpcup_ARC_c++.cpp:301:9: warning: unused variable 'i' [-Wunused-variable]
+  301 |  UInt32 i = 0;
+      |         ^
+../source/nxpcup_ARC_c++.cpp:302:7: warning: unused variable 'aRet' [-Wunused-variable]
+  302 |  bool aRet;
+      |       ^~~~
+../source/nxpcup_ARC_c++.cpp:306:8: warning: unused variable 'aImageTab' [-Wunused-variable]
+  306 |  UInt8 aImageTab[200];
+      |        ^~~~~~~~~
+../source/nxpcup_ARC_c++.cpp:308:15: warning: unused variable 'aAccel' [-Wunused-variable]
+  308 |  SRAWDATAEnum aAccel;   // in g
+      |               ^~~~~~
+../source/nxpcup_ARC_c++.cpp:309:15: warning: unused variable 'aMagneto' [-Wunused-variable]
+  309 |  SRAWDATAEnum aMagneto; // in micro teslas
+      |               ^~~~~~~~
+../source/nxpcup_ARC_c++.cpp:310:8: warning: unused variable 'aYaw' [-Wunused-variable]
+  310 |  float aYaw;      // in degree
+      |        ^~~~
+../source/nxpcup_ARC_c++.cpp:311:8: warning: unused variable 'aRoll' [-Wunused-variable]
+  311 |  float aRoll;     // in degree
+      |        ^~~~~
+../source/nxpcup_ARC_c++.cpp:312:8: warning: unused variable 'aPitch' [-Wunused-variable]
+  312 |  float aPitch;     // in degree
+      |        ^~~~~~
+../source/nxpcup_ARC_c++.cpp:430:9: warning: unused variable 'prev_distance' [-Wunused-variable]
+  430 |  double prev_distance = 0;
+      |         ^~~~~~~~~~~~~
+../source/nxpcup_ARC_c++.cpp:431:9: warning: unused variable 'prev_error' [-Wunused-variable]
+  431 |  double prev_error = 0;
+      |         ^~~~~~~~~~
+../source/nxpcup_ARC_c++.cpp: At global scope:
+../source/nxpcup_ARC_c++.cpp:296:14: warning: 'sImageOk' defined but not used [-Wunused-variable]
+  296 |  static bool sImageOk = false;
+      |              ^~~~~~~~
+../source/nxpcup_ARC_c++.cpp:295:15: warning: 'sPixelValMoy' defined but not used [-Wunused-variable]
+  295 |  static UInt8 sPixelValMoy;
+      |               ^~~~~~~~~~~~
+../source/nxpcup_ARC_c++.cpp:101:14: warning: 'sAngVel_Z' defined but not used [-Wunused-variable]
+  101 | static float sAngVel_Z;
+      |              ^~~~~~~~~
+../source/nxpcup_ARC_c++.cpp:100:14: warning: 'sAngVel_Y' defined but not used [-Wunused-variable]
+  100 | static float sAngVel_Y;
+      |              ^~~~~~~~~
+../source/nxpcup_ARC_c++.cpp:96:14: warning: 'sPitch' defined but not used [-Wunused-variable]
+   96 | static float sPitch; // in degree
+      |              ^~~~~~
+../source/nxpcup_ARC_c++.cpp:95:14: warning: 'sRoll' defined but not used [-Wunused-variable]
+   95 | static float sRoll;  // in degree
+      |              ^~~~~
+../source/nxpcup_ARC_c++.cpp:94:14: warning: 'sYaw' defined but not used [-Wunused-variable]
+   94 | static float sYaw;   // in degree
+      |              ^~~~
+../source/nxpcup_ARC_c++.cpp:92:21: warning: 'sMagneto' defined but not used [-Wunused-variable]
+   92 | static SRAWDATAEnum sMagneto; // in micro teslas
+      |                     ^~~~~~~~
+../source/nxpcup_ARC_c++.cpp:91:21: warning: 'sAccel' defined but not used [-Wunused-variable]
+   91 | static SRAWDATAEnum sAccel;   // in g
+      |                     ^~~~~~
+../source/nxpcup_ARC_c++.cpp:89:15: warning: 'sImageTabTest' defined but not used [-Wunused-variable]
+   89 | static UInt16 sImageTabTest[200];
+      |               ^~~~~~~~~~~~~
+Finished building: ../source/nxpcup_ARC_c++.cpp
+ 
+Building target: with_prints.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -Xlinker -Map="with_prints.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T with_prints_Debug.ld -o "with_prints.axf"  ./utilities/fsl_debug_console.o ./utilities/fsl_str.o  ./startup/startup_mk64f12.o  ./source/Modules/mAccelMagneto.o ./source/Modules/mAd.o ./source/Modules/mCpu.o ./source/Modules/mDac.o ./source/Modules/mDelay.o ./source/Modules/mGyro.o ./source/Modules/mLeds.o ./source/Modules/mRS232.o ./source/Modules/mSpi.o ./source/Modules/mSwitch.o ./source/Modules/mTimer.o ./source/Modules/mVL6180x.o  ./source/Interfaces/iAd.o ./source/Interfaces/iCpu.o ./source/Interfaces/iDac.o ./source/Interfaces/iDio.o ./source/Interfaces/iFlextimer.o ./source/Interfaces/iI2C.o ./source/Interfaces/iPit.o ./source/Interfaces/iSpi.o ./source/Interfaces/iUart.o  ./source/Applications/gCompute.o ./source/Applications/gInput.o ./source/Applications/gMBox.o ./source/Applications/gOutput.o  ./source/cpp_config.o ./source/nxpcup_ARC_c++.o ./source/semihost_hardfault.o  ./drivers/fsl_adc16.o ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_common_arm.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_smc.o ./drivers/fsl_uart.o  ./device/system_MK64F12.o  ./component/uart/fsl_adapter_uart.o  ./component/serial_manager/fsl_component_serial_manager.o ./component/serial_manager/fsl_component_serial_port_uart.o  ./component/lists/fsl_component_generic_list.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:       30336 B         1 MB      2.89%
+      SRAM_UPPER:        9432 B       192 KB      4.80%
+      SRAM_LOWER:          0 GB        64 KB      0.00%
+        FLEX_RAM:          0 GB         4 KB      0.00%
+Finished building target: with_prints.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "with_prints.axf"; # arm-none-eabi-objcopy -v -O binary "with_prints.axf" "with_prints.bin" ; # checksum -p MK64FN1M0xxx12 -d "with_prints.bin";
+   text	   data	    bss	    dec	    hex	filename
+  30224	    112	   9320	  39656	   9ae8	with_prints.axf
+ 
+
+16:06:47 Build Finished. 0 errors, 26 warnings. (took 1s.245ms)
+

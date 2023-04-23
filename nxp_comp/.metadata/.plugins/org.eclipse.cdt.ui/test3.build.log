@@ -1,0 +1,11 @@
+17:19:30 **** Incremental Build of configuration Debug for project test3 ****
+make -r -j8 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size "test3.axf"; # arm-none-eabi-objcopy -v -O binary "test3.axf" "test3.bin" ; # checksum -p MK64FN1M0xxx12 -d "test3.bin";
+   text	   data	    bss	    dec	    hex	filename
+  16072	    112	   8336	  24520	   5fc8	test3.axf
+ 
+
+17:19:31 Build Finished. 0 errors, 0 warnings. (took 762ms)
+

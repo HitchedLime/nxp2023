@@ -1,0 +1,19 @@
+17:06:58 **** Incremental Build of configuration Debug for project test2 ****
+make -r -j8 all 
+Building target: test2.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -Xlinker -Map="test2.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T test2_Debug.ld -o "test2.axf"  ./utilities/fsl_debug_console.o ./utilities/fsl_str.o  ./startup/startup_mk64f12.o  ./drivers/fsl_adc16.o ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_common_arm.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_smc.o ./drivers/fsl_uart.o  ./device/system_MK64F12.o  ./component/uart/fsl_adapter_uart.o  ./component/serial_manager/fsl_component_serial_manager.o ./component/serial_manager/fsl_component_serial_port_uart.o  ./component/lists/fsl_component_generic_list.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+/usr/local/mcuxpressoide-11.6.1_8255/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.6.1.202207200623/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: ./startup/startup_mk64f12.o: in function `ResetISR':
+/home/david/Documents/nxp_comp/test2/Debug/../startup/startup_mk64f12.cpp:534: undefined reference to `main'
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2496 B         1 MB      0.24%
+      SRAM_UPPER:        8272 B       192 KB      4.21%
+      SRAM_LOWER:          0 GB        64 KB      0.00%
+        FLEX_RAM:          0 GB         4 KB      0.00%
+collect2: error: ld returned 1 exit status
+make[1]: *** [makefile:68: test2.axf] Error 1
+make: *** [makefile:59: all] Error 2
+"make -r -j8 all" terminated with exit code 2. Build might be incomplete.
+
+17:06:59 Build Failed. 4 errors, 0 warnings. (took 785ms)
+

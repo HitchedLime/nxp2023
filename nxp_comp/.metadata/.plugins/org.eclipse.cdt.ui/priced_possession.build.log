@@ -1,0 +1,19 @@
+16:05:06 **** Build of configuration Debug for project priced_possession ****
+make -r -j8 all 
+Building target: priced_possession.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="priced_possession.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T priced_possession_Debug.ld -o "priced_possession.axf"  ./utilities/fsl_debug_console.o ./utilities/fsl_str.o  ./startup/startup_mk64f12.o  ./source/Modules/mAccelMagneto.o ./source/Modules/mAd.o ./source/Modules/mCpu.o ./source/Modules/mDac.o ./source/Modules/mDelay.o ./source/Modules/mGyro.o ./source/Modules/mLeds.o ./source/Modules/mRS232.o ./source/Modules/mSpi.o ./source/Modules/mSwitch.o ./source/Modules/mTimer.o ./source/Modules/mVL6180x.o  ./source/Interfaces/iAd.o ./source/Interfaces/iCpu.o ./source/Interfaces/iDac.o ./source/Interfaces/iDio.o ./source/Interfaces/iFlextimer.o ./source/Interfaces/iI2C.o ./source/Interfaces/iPit.o ./source/Interfaces/iSpi.o ./source/Interfaces/iUart.o  ./source/Applications/gCompute.o ./source/Applications/gInput.o ./source/Applications/gMBox.o ./source/Applications/gOutput.o  ./source/semihost_hardfault.o  ./drivers/fsl_adc16.o ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_common_arm.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_smc.o ./drivers/fsl_uart.o  ./device/system_MK64F12.o  ./component/uart/fsl_adapter_uart.o  ./component/serial_manager/fsl_component_serial_manager.o ./component/serial_manager/fsl_component_serial_port_uart.o  ./component/lists/fsl_component_generic_list.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+/usr/local/mcuxpressoide-11.6.1_8255/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.6.1.202207200623/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: /usr/local/mcuxpressoide-11.6.1_8255/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.6.1.202207200623/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_nohost_nf.a(_cr__main.o): in function `__main':
+_cr__main.c:(.text.__main+0xa): undefined reference to `main'
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        7784 B         1 MB      0.74%
+      SRAM_UPPER:        8640 B       192 KB      4.39%
+      SRAM_LOWER:          0 GB        64 KB      0.00%
+        FLEX_RAM:          0 GB         4 KB      0.00%
+collect2: error: ld returned 1 exit status
+make[1]: *** [makefile:57: priced_possession.axf] Error 1
+make: *** [makefile:48: all] Error 2
+"make -r -j8 all" terminated with exit code 2. Build might be incomplete.
+
+16:05:07 Build Failed. 4 errors, 0 warnings. (took 825ms)
+

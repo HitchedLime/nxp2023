@@ -1,0 +1,7 @@
+ExitOnError 1
+r
+h
+loadfile "/home/david/Documents/nxp_comp/MK64F12_Project/Debug/MK64F12_Project.hex" 0x0 
+qc
+
+qc

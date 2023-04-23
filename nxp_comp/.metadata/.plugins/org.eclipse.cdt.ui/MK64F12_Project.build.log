@@ -1,0 +1,10 @@
+11:44:42 **** Build of configuration Debug for project MK64F12_Project ****
+make -r -j8 all 
+Building target: MK64F12_Project.axf
+echo: write error: Broken pipe
+make[1]: *** [makefile:73: MK64F12_Project.axf] Error 1
+make: *** [makefile:63: all] Error 2
+"make -r -j8 all" terminated with exit code 2. Build might be incomplete.
+
+11:44:43 Build Failed. 2 errors, 0 warnings. (took 871ms)
+

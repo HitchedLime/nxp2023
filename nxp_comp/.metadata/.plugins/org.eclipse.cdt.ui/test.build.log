@@ -1,0 +1,318 @@
+13:34:28 **** Build of configuration Debug for project test ****
+make -r -j8 all 
+Building file: ../utilities/fsl_debug_console.c
+Building file: ../utilities/fsl_str.c
+Building file: ../startup/startup_mk64f12.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Building file: ../source/Modules/mAccelMagneto.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../utilities/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_debug_console.d" -MT"utilities/fsl_debug_console.o" -MT"utilities/fsl_debug_console.d" -o "utilities/fsl_debug_console.o" "../utilities/fsl_debug_console.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../utilities/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_str.d" -MT"utilities/fsl_str.o" -MT"utilities/fsl_str.d" -o "utilities/fsl_str.o" "../utilities/fsl_str.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../startup/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"startup/startup_mk64f12.d" -MT"startup/startup_mk64f12.o" -MT"startup/startup_mk64f12.d" -o "startup/startup_mk64f12.o" "../startup/startup_mk64f12.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Modules/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Modules/mAccelMagneto.d" -MT"source/Modules/mAccelMagneto.o" -MT"source/Modules/mAccelMagneto.d" -o "source/Modules/mAccelMagneto.o" "../source/Modules/mAccelMagneto.c"
+Building file: ../source/Modules/mAd.c
+Building file: ../source/Modules/mCpu.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Modules/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Modules/mAd.d" -MT"source/Modules/mAd.o" -MT"source/Modules/mAd.d" -o "source/Modules/mAd.o" "../source/Modules/mAd.c"
+../source/Modules/mAd.c: In function 'mAd_ReadCamera':
+../source/Modules/mAd.c:136:2: warning: enumeration value 'kUBatt' not handled in switch [-Wswitch]
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Modules/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Modules/mCpu.d" -MT"source/Modules/mCpu.o" -MT"source/Modules/mCpu.d" -o "source/Modules/mCpu.o" "../source/Modules/mCpu.c"
+  136 |  switch (aAdcInp)
+      |  ^~~~~~
+../source/Modules/mAd.c:136:2: warning: enumeration value 'kIHBridgeLeft' not handled in switch [-Wswitch]
+../source/Modules/mAd.c:136:2: warning: enumeration value 'kIHBridgeRight' not handled in switch [-Wswitch]
+Building file: ../source/Modules/mDac.c
+Building file: ../source/Modules/mDelay.c
+Invoking: MCU C Compiler
+../source/Modules/mAccelMagneto.c: In function 'mAccelMagneto_ReadData':
+../source/Modules/mAccelMagneto.c:681:13: warning: implicit declaration of function 'atan2' [-Wimplicit-function-declaration]
+  681 |    *aYaw = (atan2(Yout_uT, Xout_uT)) * (180 / PI);
+      |             ^~~~~
+Invoking: MCU C Compiler
+../source/Modules/mAccelMagneto.c:683:28: warning: implicit declaration of function 'sqrt' [-Wimplicit-function-declaration]
+  683 |    *aRoll = (atan2(Yout_g, sqrt((Xout_g * Xout_g) + (Zout_g * Zout_g)))) * (180 / PI);
+      |                            ^~~~
+../source/Modules/mAccelMagneto.c: In function 'PORTB_IRQHandler':
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Modules/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Modules/mDac.d" -MT"source/Modules/mDac.o" -MT"source/Modules/mDac.d" -o "source/Modules/mDac.o" "../source/Modules/mDac.c"
+Finished building: ../source/Modules/mAd.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Modules/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Modules/mDelay.d" -MT"source/Modules/mDelay.o" -MT"source/Modules/mDelay.d" -o "source/Modules/mDelay.o" "../source/Modules/mDelay.c"
+../source/Modules/mAccelMagneto.c:707:7: warning: unused variable 'aRet' [-Wunused-variable]
+  707 |  bool aRet;
+      |       ^~~~
+At top level:
+../source/Modules/mAccelMagneto.c:74:14: warning: 'Heading' defined but not used [-Wunused-variable]
+   74 | static float Heading;
+      |              ^~~~~~~
+ 
+Building file: ../source/Modules/mGyro.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Modules/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Modules/mGyro.d" -MT"source/Modules/mGyro.o" -MT"source/Modules/mGyro.d" -o "source/Modules/mGyro.o" "../source/Modules/mGyro.c"
+Finished building: ../source/Modules/mCpu.c
+ 
+Building file: ../source/Modules/mLeds.c
+Finished building: ../source/Modules/mDac.c
+ 
+In file included from ../source/Modules/mGyro.c:47:
+Invoking: MCU C Compiler
+../source/Modules/mGyro.h:65:24: warning: multi-line comment [-Wcomment]
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Modules/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Modules/mLeds.d" -MT"source/Modules/mLeds.o" -MT"source/Modules/mLeds.d" -o "source/Modules/mLeds.o" "../source/Modules/mLeds.c"
+Building file: ../source/Modules/mRS232.c
+   65 | #define OUT_Z_LSB 0x06 // [7:0] are 8 MSBs of 16 bit Z-axis data sample; \
+      |                        ^
+Invoking: MCU C Compiler
+Finished building: ../startup/startup_mk64f12.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Modules/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Modules/mRS232.d" -MT"source/Modules/mRS232.o" -MT"source/Modules/mRS232.d" -o "source/Modules/mRS232.o" "../source/Modules/mRS232.c"
+ 
+Building file: ../source/Modules/mSpi.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Modules/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Modules/mSpi.d" -MT"source/Modules/mSpi.o" -MT"source/Modules/mSpi.d" -o "source/Modules/mSpi.o" "../source/Modules/mSpi.c"
+Finished building: ../source/Modules/mDelay.c
+Finished building: ../source/Modules/mRS232.c
+ 
+Finished building: ../source/Modules/mLeds.c
+ 
+ 
+Building file: ../source/Modules/mSwitch.c
+Building file: ../source/Modules/mTimer.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Modules/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Modules/mSwitch.d" -MT"source/Modules/mSwitch.o" -MT"source/Modules/mSwitch.d" -o "source/Modules/mSwitch.o" "../source/Modules/mSwitch.c"
+Building file: ../source/Modules/mVL6180x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Modules/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Modules/mTimer.d" -MT"source/Modules/mTimer.o" -MT"source/Modules/mTimer.d" -o "source/Modules/mTimer.o" "../source/Modules/mTimer.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Modules/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Modules/mVL6180x.d" -MT"source/Modules/mVL6180x.o" -MT"source/Modules/mVL6180x.d" -o "source/Modules/mVL6180x.o" "../source/Modules/mVL6180x.c"
+Finished building: ../source/Modules/mAccelMagneto.c
+ 
+Building file: ../source/Interfaces/iAd.c
+../source/Modules/mSpi.c: In function 'mSpi_GetImageCam1':
+Invoking: MCU C Compiler
+../source/Modules/mSpi.c:591:6: warning: 'aMs' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  591 |   if (aMs <= 6.5)
+      |      ^
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Interfaces/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Interfaces/iAd.d" -MT"source/Interfaces/iAd.o" -MT"source/Interfaces/iAd.d" -o "source/Interfaces/iAd.o" "../source/Interfaces/iAd.c"
+../source/Modules/mSpi.c: In function 'mSpi_GetImageCam2':
+../source/Modules/mVL6180x.c: In function 'mVL6180x_GetRange':
+../source/Modules/mVL6180x.c:170:7: warning: unused variable 'aRet' [-Wunused-variable]
+  170 |  bool aRet;
+      |       ^~~~
+../source/Modules/mSpi.c:663:6: warning: 'aMs' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  663 |   if (aMs <= 6.5)
+      |      ^
+../source/Modules/mVL6180x.c: In function 'mVL6180x_StartRange':
+../source/Modules/mVL6180x.c:154:1: warning: control reaches end of non-void function [-Wreturn-type]
+  154 | }
+      | ^
+Finished building: ../source/Modules/mSwitch.c
+Finished building: ../utilities/fsl_str.c
+ 
+ 
+Finished building: ../source/Modules/mVL6180x.c
+Finished building: ../source/Modules/mTimer.c
+Building file: ../source/Interfaces/iCpu.c
+ 
+ 
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Interfaces/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Interfaces/iCpu.d" -MT"source/Interfaces/iCpu.o" -MT"source/Interfaces/iCpu.d" -o "source/Interfaces/iCpu.o" "../source/Interfaces/iCpu.c"
+Building file: ../source/Interfaces/iDio.c
+Invoking: MCU C Compiler
+Building file: ../source/Interfaces/iDac.c
+Building file: ../source/Interfaces/iFlextimer.c
+Finished building: ../utilities/fsl_debug_console.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Interfaces/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Interfaces/iDio.d" -MT"source/Interfaces/iDio.o" -MT"source/Interfaces/iDio.d" -o "source/Interfaces/iDio.o" "../source/Interfaces/iDio.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Interfaces/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Interfaces/iDac.d" -MT"source/Interfaces/iDac.o" -MT"source/Interfaces/iDac.d" -o "source/Interfaces/iDac.o" "../source/Interfaces/iDac.c"
+ 
+Invoking: MCU C Compiler
+Building file: ../source/Interfaces/iI2C.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Interfaces/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Interfaces/iFlextimer.d" -MT"source/Interfaces/iFlextimer.o" -MT"source/Interfaces/iFlextimer.d" -o "source/Interfaces/iFlextimer.o" "../source/Interfaces/iFlextimer.c"
+../source/Interfaces/iAd.c: In function 'iAd_SelectChannel':
+../source/Interfaces/iAd.c:119:9: warning: unused variable 'aVal' [-Wunused-variable]
+  119 |  UInt16 aVal;
+      |         ^~~~
+Finished building: ../source/Modules/mGyro.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Interfaces/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Interfaces/iI2C.d" -MT"source/Interfaces/iI2C.o" -MT"source/Interfaces/iI2C.d" -o "source/Interfaces/iI2C.o" "../source/Interfaces/iI2C.c"
+ 
+Building file: ../source/Interfaces/iPit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Interfaces/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Interfaces/iPit.d" -MT"source/Interfaces/iPit.o" -MT"source/Interfaces/iPit.d" -o "source/Interfaces/iPit.o" "../source/Interfaces/iPit.c"
+../source/Interfaces/iPit.c: In function 'iPit_Config':
+../source/Interfaces/iPit.c:81:8: warning: unused variable 'i' [-Wunused-variable]
+   81 |  UInt8 i = 0;
+      |        ^
+../source/Interfaces/iPit.c: In function 'PIT0_IRQHandler':
+../source/Interfaces/iPit.c:306:9: warning: variable 'aTmp' set but not used [-Wunused-but-set-variable]
+  306 |  UInt32 aTmp;
+      |         ^~~~
+../source/Interfaces/iPit.c: In function 'PIT1_IRQHandler':
+../source/Interfaces/iPit.c:330:9: warning: variable 'aTmp' set but not used [-Wunused-but-set-variable]
+  330 |  UInt32 aTmp;
+      |         ^~~~
+../source/Interfaces/iPit.c: In function 'PIT2_IRQHandler':
+../source/Interfaces/iPit.c:353:9: warning: variable 'aTmp' set but not used [-Wunused-but-set-variable]
+  353 |  UInt32 aTmp;
+      |         ^~~~
+../source/Interfaces/iPit.c: In function 'PIT3_IRQHandler':
+../source/Interfaces/iPit.c:376:9: warning: variable 'aTmp' set but not used [-Wunused-but-set-variable]
+  376 |  UInt32 aTmp;
+      |         ^~~~
+Finished building: ../source/Modules/mSpi.c
+ 
+Building file: ../source/Interfaces/iSpi.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Interfaces/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Interfaces/iSpi.d" -MT"source/Interfaces/iSpi.o" -MT"source/Interfaces/iSpi.d" -o "source/Interfaces/iSpi.o" "../source/Interfaces/iSpi.c"
+Finished building: ../source/Interfaces/iAd.c
+ 
+Building file: ../source/Interfaces/iUart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Interfaces/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Interfaces/iUart.d" -MT"source/Interfaces/iUart.o" -MT"source/Interfaces/iUart.d" -o "source/Interfaces/iUart.o" "../source/Interfaces/iUart.c"
+Finished building: ../source/Interfaces/iDio.c
+ 
+Building file: ../source/Applications/gCompute.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Applications/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Applications/gCompute.d" -MT"source/Applications/gCompute.o" -MT"source/Applications/gCompute.d" -o "source/Applications/gCompute.o" "../source/Applications/gCompute.c"
+Finished building: ../source/Interfaces/iI2C.c
+Finished building: ../source/Interfaces/iCpu.c
+ 
+ 
+Building file: ../source/Applications/gInput.c
+Building file: ../source/Applications/gMBox.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Applications/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Applications/gInput.d" -MT"source/Applications/gInput.o" -MT"source/Applications/gInput.d" -o "source/Applications/gInput.o" "../source/Applications/gInput.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Applications/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Applications/gMBox.d" -MT"source/Applications/gMBox.o" -MT"source/Applications/gMBox.d" -o "source/Applications/gMBox.o" "../source/Applications/gMBox.c"
+Finished building: ../source/Interfaces/iDac.c
+In file included from ../source/Applications/gInput.c:43:
+../source/Applications/gInput.h:4:21: warning: "/*" within comment [-Wcomment]
+    4 | All rights reserved./*
+      |                      
+Finished building: ../source/Applications/gCompute.c
+Finished building: ../source/Interfaces/iPit.c
+ 
+Finished building: ../source/Interfaces/iFlextimer.c
+Finished building: ../source/Applications/gInput.c
+ 
+ 
+ 
+Building file: ../source/Applications/gOutput.c
+ 
+Building file: ../source/semihost_hardfault.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/Applications/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/Applications/gOutput.d" -MT"source/Applications/gOutput.o" -MT"source/Applications/gOutput.d" -o "source/Applications/gOutput.o" "../source/Applications/gOutput.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/semihost_hardfault.d" -MT"source/semihost_hardfault.o" -MT"source/semihost_hardfault.d" -o "source/semihost_hardfault.o" "../source/semihost_hardfault.c"
+Building file: ../drivers/fsl_adc16.c
+Finished building: ../source/Applications/gMBox.c
+Building file: ../drivers/fsl_clock.c
+Invoking: MCU C Compiler
+ 
+Building file: ../drivers/fsl_common.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_adc16.d" -MT"drivers/fsl_adc16.o" -MT"drivers/fsl_adc16.d" -o "drivers/fsl_adc16.o" "../drivers/fsl_adc16.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_clock.d" -MT"drivers/fsl_clock.o" -MT"drivers/fsl_clock.d" -o "drivers/fsl_clock.o" "../drivers/fsl_clock.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_common.d" -MT"drivers/fsl_common.o" -MT"drivers/fsl_common.d" -o "drivers/fsl_common.o" "../drivers/fsl_common.c"
+Building file: ../drivers/fsl_common_arm.c
+Invoking: MCU C Compiler
+Finished building: ../source/Applications/gOutput.c
+Finished building: ../source/semihost_hardfault.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_common_arm.d" -MT"drivers/fsl_common_arm.o" -MT"drivers/fsl_common_arm.d" -o "drivers/fsl_common_arm.o" "../drivers/fsl_common_arm.c"
+Finished building: ../source/Interfaces/iSpi.c
+ 
+ 
+ 
+Building file: ../drivers/fsl_gpio.c
+Building file: ../drivers/fsl_i2c.c
+Invoking: MCU C Compiler
+Finished building: ../source/Interfaces/iUart.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_gpio.d" -MT"drivers/fsl_gpio.o" -MT"drivers/fsl_gpio.d" -o "drivers/fsl_gpio.o" "../drivers/fsl_gpio.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_i2c.d" -MT"drivers/fsl_i2c.o" -MT"drivers/fsl_i2c.d" -o "drivers/fsl_i2c.o" "../drivers/fsl_i2c.c"
+ 
+Building file: ../drivers/fsl_smc.c
+Building file: ../drivers/fsl_uart.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_uart.d" -MT"drivers/fsl_uart.o" -MT"drivers/fsl_uart.d" -o "drivers/fsl_uart.o" "../drivers/fsl_uart.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../drivers/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_smc.d" -MT"drivers/fsl_smc.o" -MT"drivers/fsl_smc.d" -o "drivers/fsl_smc.o" "../drivers/fsl_smc.c"
+Finished building: ../drivers/fsl_common.c
+ 
+Building file: ../device/system_MK64F12.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../device/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"device/system_MK64F12.d" -MT"device/system_MK64F12.o" -MT"device/system_MK64F12.d" -o "device/system_MK64F12.o" "../device/system_MK64F12.c"
+Finished building: ../drivers/fsl_adc16.c
+ 
+Finished building: ../drivers/fsl_common_arm.c
+Building file: ../component/uart/fsl_adapter_uart.c
+ 
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../component/uart/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/uart/fsl_adapter_uart.d" -MT"component/uart/fsl_adapter_uart.o" -MT"component/uart/fsl_adapter_uart.d" -o "component/uart/fsl_adapter_uart.o" "../component/uart/fsl_adapter_uart.c"
+Building file: ../component/serial_manager/fsl_component_serial_manager.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../component/serial_manager/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/serial_manager/fsl_component_serial_manager.d" -MT"component/serial_manager/fsl_component_serial_manager.o" -MT"component/serial_manager/fsl_component_serial_manager.d" -o "component/serial_manager/fsl_component_serial_manager.o" "../component/serial_manager/fsl_component_serial_manager.c"
+Finished building: ../drivers/fsl_gpio.c
+ 
+Building file: ../component/serial_manager/fsl_component_serial_port_uart.c
+Invoking: MCU C Compiler
+Finished building: ../drivers/fsl_clock.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../component/serial_manager/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/serial_manager/fsl_component_serial_port_uart.d" -MT"component/serial_manager/fsl_component_serial_port_uart.o" -MT"component/serial_manager/fsl_component_serial_port_uart.d" -o "component/serial_manager/fsl_component_serial_port_uart.o" "../component/serial_manager/fsl_component_serial_port_uart.c"
+ 
+Building file: ../component/lists/fsl_component_generic_list.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../component/lists/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/lists/fsl_component_generic_list.d" -MT"component/lists/fsl_component_generic_list.o" -MT"component/lists/fsl_component_generic_list.d" -o "component/lists/fsl_component_generic_list.o" "../component/lists/fsl_component_generic_list.c"
+Finished building: ../drivers/fsl_smc.c
+ 
+Building file: ../board/board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../board/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/board.d" -MT"board/board.o" -MT"board/board.d" -o "board/board.o" "../board/board.c"
+Finished building: ../drivers/fsl_i2c.c
+ 
+Building file: ../board/clock_config.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../board/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/clock_config.d" -MT"board/clock_config.o" -MT"board/clock_config.d" -o "board/clock_config.o" "../board/clock_config.c"
+Finished building: ../device/system_MK64F12.c
+ 
+Building file: ../board/peripherals.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../board/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/peripherals.d" -MT"board/peripherals.o" -MT"board/peripherals.d" -o "board/peripherals.o" "../board/peripherals.c"
+Finished building: ../board/peripherals.c
+Finished building: ../drivers/fsl_uart.c
+ 
+ 
+Building file: ../board/pin_mux.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MK64FN1M0VLL12 -DCPU_MK64FN1M0VLL12_cm4 -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"/home/david/Documents/nxp_comp/test/board" -I"/home/david/Documents/nxp_comp/test/source" -I"/home/david/Documents/nxp_comp/test/drivers" -I"/home/david/Documents/nxp_comp/test/device" -I"/home/david/Documents/nxp_comp/test/CMSIS" -I"/home/david/Documents/nxp_comp/test/utilities" -I"/home/david/Documents/nxp_comp/test/component/serial_manager" -I"/home/david/Documents/nxp_comp/test/component/uart" -I"/home/david/Documents/nxp_comp/test/component/lists" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../board/"= -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/pin_mux.d" -MT"board/pin_mux.o" -MT"board/pin_mux.d" -o "board/pin_mux.o" "../board/pin_mux.c"
+Finished building: ../component/uart/fsl_adapter_uart.c
+ 
+Finished building: ../component/serial_manager/fsl_component_serial_manager.c
+ 
+Finished building: ../component/serial_manager/fsl_component_serial_port_uart.c
+ 
+Finished building: ../component/lists/fsl_component_generic_list.c
+ 
+Finished building: ../board/board.c
+ 
+Finished building: ../board/clock_config.c
+ 
+Finished building: ../board/pin_mux.c
+ 
+Building target: test.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="test.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T test_Debug.ld -o "test.axf"  ./utilities/fsl_debug_console.o ./utilities/fsl_str.o  ./startup/startup_mk64f12.o  ./source/Modules/mAccelMagneto.o ./source/Modules/mAd.o ./source/Modules/mCpu.o ./source/Modules/mDac.o ./source/Modules/mDelay.o ./source/Modules/mGyro.o ./source/Modules/mLeds.o ./source/Modules/mRS232.o ./source/Modules/mSpi.o ./source/Modules/mSwitch.o ./source/Modules/mTimer.o ./source/Modules/mVL6180x.o  ./source/Interfaces/iAd.o ./source/Interfaces/iCpu.o ./source/Interfaces/iDac.o ./source/Interfaces/iDio.o ./source/Interfaces/iFlextimer.o ./source/Interfaces/iI2C.o ./source/Interfaces/iPit.o ./source/Interfaces/iSpi.o ./source/Interfaces/iUart.o  ./source/Applications/gCompute.o ./source/Applications/gInput.o ./source/Applications/gMBox.o ./source/Applications/gOutput.o  ./source/semihost_hardfault.o  ./drivers/fsl_adc16.o ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_common_arm.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_smc.o ./drivers/fsl_uart.o  ./device/system_MK64F12.o  ./component/uart/fsl_adapter_uart.o  ./component/serial_manager/fsl_component_serial_manager.o ./component/serial_manager/fsl_component_serial_port_uart.o  ./component/lists/fsl_component_generic_list.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+/usr/local/mcuxpressoide-11.6.1_8255/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.6.1.202207200623/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: /usr/local/mcuxpressoide-11.6.1_8255/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.6.1.202207200623/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_nohost_nf.a(_cr__main.o): in function `__main':
+_cr__main.c:(.text.__main+0xa): undefined reference to `main'
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6328 B         1 MB      0.60%
+      SRAM_UPPER:        8592 B       192 KB      4.37%
+      SRAM_LOWER:          0 GB        64 KB      0.00%
+        FLEX_RAM:          0 GB         4 KB      0.00%
+collect2: error: ld returned 1 exit status
+make[1]: *** [makefile:57: test.axf] Error 1
+make: *** [makefile:48: all] Error 2
+"make -r -j8 all" terminated with exit code 2. Build might be incomplete.
+
+13:34:31 Build Failed. 4 errors, 19 warnings. (took 2s.99ms)
+
